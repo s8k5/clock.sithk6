@@ -109,7 +109,7 @@ function clock () {
 	var h = d.getHours();
 	var m = d.getMinutes();
 	var s = d.getSeconds();
-	var ap = "AM";
+
 	if (h>12) {
 		h = h-12;
 		}
@@ -119,7 +119,7 @@ function clock () {
 h = h<10? "0"+h:h;
 m = m<10? "0"+m:m;
 s = s<10? "0"+s:s;
-	time = h +":"+ m +":"+ s +" "+ap;
+	time = h +":"+ m +":"+ s +" "+timeOfDay;
 	
 	
 	document.getElementsByTagName('h1') [0].innerText = time;
